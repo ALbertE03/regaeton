@@ -4,9 +4,8 @@ img {
     transition: transform 0.3s ease;
     border-radius: 10px;
     filter: grayscale(95%) brightness(100%);
-
+    background-image: url('/fotos/1*aXVnTFANf-EZYGkYN1C7ow.jpg');
 }
-
 
 img:hover {
     transform: scale(1.1) rotate(5deg);
