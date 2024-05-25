@@ -61,14 +61,25 @@
             </div>
         </div>
         <div class="fotos-container">
-            <img src="/regaeton/fotos/220px-DaddyYankee.jpg" title="Daddy Yankee" object-fit="contain">
-            <img src="/regaeton/fotos/A-320920-1641971228-4053.jpg" title="Don Omar" object-fit="contain">
-            <img src="/regaeton/fotos/220px-Vico_-_C_en_Puerto_Rico_(cropped).jpg" title="Vico C" object-fit="contain">
-            <img srcset="/regaeton/fotos/1189176706_0.jpg" title="Tego Calderon" max-width="200" max-height="100">
+            <img src="/regaeton/fotos/220px-DaddyYankee.jpg" title="Daddy Yankee" id="Daddy" onclick="showMdoal(this)">
+            <img src="/regaeton/fotos/A-320920-1641971228-4053.jpg" title="Don Omar" id="DonOmar"
+                onclick="showMdoal(this)">
+            <img src="/regaeton/fotos/220px-Vico_-_C_en_Puerto_Rico_(cropped).jpg" title="VicoC" id="Vico"
+                onclick="showMdoal(this)">
+            <img srcset="/regaeton/fotos/1189176706_0.jpg" title="Tego Calderon" id="Tego" onclick="showMdoal(this)">
         </div>
 
-        <p>&copy; 2024 Timeline del Reguetón</p>
-        </footer>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="">
+                <h2 id="modalTitle"></h2>
+                <p id="modalInfo"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
