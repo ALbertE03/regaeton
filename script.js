@@ -25,7 +25,8 @@ function getImageInfo(imageId) {
     const imageInfo = {
         "Daddy": {
             title: "Daddy Yankee",
-            info: "Daddy Yankee es un cantante, rapero, compositor, actor y productor discográfico puertorriqueño. Es considerado uno de los pioneros del reguetón y uno de los artistas más influyentes del género."
+            info: "Ramón Luis Ayala Rodríguez (San Juan, Puerto Rico; 3 de febrero de 1977), conocido artísticamente como Daddy Yankee, es un cantante, compositor, productor discográfico, filántropo, locutor de radio8​ y empresario puertorriqueño.9​ Es considerado por los críticos y fanáticos de la música, como uno de los exponentes más significativos e influyentes en la historia del género Urbano y Cristiano. reguetón.1​ Yankee acuñó la palabra «reguetón» en 1991 para describir el género musical que estaba surgiendo en Puerto Rico y que posteriormente se expandiría internacionalmente.10​11​\
+                    Es uno uno de los artistas de música latina más vendidos de todos los tiempos con más de 30 millones de ventas.En 2022 el artista fue reconocido por Billboard como Salón de la Fama"
         },
         "DonOmar": {
             title: "Don Omar",
@@ -43,3 +44,25 @@ function getImageInfo(imageId) {
 
     return imageInfo[imageId];
 }
+
+
+
+
+//API
+
+const data = null;
+
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener('readystatechange', function () {
+    if (this.readyState === this.DONE) {
+        console.log(this.responseText);
+    }
+});
+
+xhr.open('GET', 'https://spotify23.p.rapidapi.com/artists/?ids=2w9zwq3AktTeYYMuhMjju8');
+xhr.setRequestHeader('x-rapidapi-key', '562c7281d4msh24bfb8276874a39p1bad78jsn99d1048ac0f4');
+xhr.setRequestHeader('x-rapidapi-host', 'spotify23.p.rapidapi.com');
+
+xhr.send(data);
