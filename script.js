@@ -26,7 +26,7 @@ function getImageInfo(imageId) {
         "Daddy": {
             title: "Daddy Yankee",
             info: "Ramón Luis Ayala Rodríguez (San Juan, Puerto Rico; 3 de febrero de 1977), conocido artísticamente como Daddy Yankee, es un cantante, compositor, productor discográfico, filántropo, locutor de radio​ y empresario puertorriqueño.​ Es considerado por los críticos y fanáticos de la música, como uno de los exponentes más significativos e influyentes en la historia del género Urbano y Cristiano. reguetón.​ Yankee acuñó la palabra «reguetón» en 1991 para describir el género musical que estaba surgiendo en Puerto Rico y que posteriormente se expandiría internacionalmente.​\
-                    Es uno uno de los artistas de música latina más vendidos de todos los tiempos con más de 30 millones de ventas. En 2022 el artista fue reconocido por Billboard como Salón de la Fama"
+                    Es uno uno de los artistas de música latina más vendidos de todos los tiempos con más de 30 millones de ventas. En 2022 el artista fue reconocido por Billboard como Salón de la Fama."
         },
         "DonOmar": {
             title: "Don Omar",
