@@ -3,29 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reggaeton</title>
-    <h1>hola</h1>
+    <title>Timeline del Reguetón</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <script>
-        const settings = {
-            async: true,
-            crossDomain: true,
-            url: 'https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5',
-            method: 'GET',
-            headers: {
-                'x-rapidapi-key': '562c7281d4msh24bfb8276874a39p1bad78jsn99d1048ac0f4',
-                'x-rapidapi-host': 'spotify23.p.rapidapi.com'
-            }
-        };
+    <header>
+        <div class="title">
+            <h1>Timeline del Reguetón</h1>
+        </div>
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-        });
-    </script>
+    </header>
+
+    <main>
+
+        <div class="timeline">
+            <div class="timeline-item animate">
+                <div class="timeline-icon">
+                    <i class="music"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="title1">
+                        <h2>Inicios del Reguetón</h2>
+                    </div>
+                    <a href="">
+                        <p>El reguetón tiene sus raíces en los barrios marginales de San Juan, donde los jóvenes
+                            comenzaron
+                            a fusionar elementos
+                            del rap, el reggae en español y la música urbana latina. Con letras crudas y beats
+                            pegajosos, el
+                            reguetón se convirtió
+                            en la voz de una generación que buscaba expresar su realidad sin censura.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="inicios">
+            <div class="inicios-animate">
+                <div class="inicios-icon">
+                    <i class="inicios-music"></i>
+                </div>
+                <div class="inicios-content">
+                    <div class="title2">
+                        <h2>Principales Exponentes</h2>
+                    </div>
+                    <a href="">
+                        <p>
+                            Artistas como Vico C, Daddy Yankee y Don Omar fueron los pioneros que llevaron el reguetón a
+                            las masas. Sus canciones,
+                            como "Gasolina" y "Reggaetón Viejo", se convirtieron en himnos que resonaron en las fiestas
+                            y clubes de todo el mundo.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 202 Timeline del Reguetón</p>
+    </footer>
 </body>
 
 </html>
