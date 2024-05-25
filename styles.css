@@ -77,12 +77,23 @@
 
 }
 
+
 .fotos-container {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: nowrap;
+}
 
-    img {
-        flex: 1 0 auto;
+.fotos-container img {
+    width: 25%;
+}
+
+@media (max-width:768px) {
+    .fotos-container {
+        flex-wrap: wrap;
     }
+
+    .fotos-container img {
+        width: 100%;
+    }
+
 }
