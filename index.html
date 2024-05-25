@@ -11,23 +11,20 @@
 
 <body>
     <script>
-        const data = null;
-
-        const xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener('readystatechange', function () {
-            if (this.readyState === this.DONE) {
-                console.log(this.responseText);
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5',
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': '562c7281d4msh24bfb8276874a39p1bad78jsn99d1048ac0f4',
+                'x-rapidapi-host': 'spotify23.p.rapidapi.com'
             }
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
         });
-
-        xhr.open('GET', 'https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5');
-        xhr.setRequestHeader('x-rapidapi-key', '562c7281d4msh24bfb8276874a39p1bad78jsn99d1048ac0f4');
-        xhr.setRequestHeader('x-rapidapi-host', 'spotify23.p.rapidapi.com');
-
-        xhr.send(data);
-        console.log(xhr)
     </script>
 </body>
 
