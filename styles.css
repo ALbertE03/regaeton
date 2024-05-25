@@ -30,7 +30,6 @@
 }
 
 .inicios-content {
-    display: inline;
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -56,6 +55,7 @@
 }
 
 .inicios {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,4 +67,22 @@
     box-sizing: border-box;
     background-color: aquamarine;
 
+}
+
+@media screen and (min-width:0) {
+    .inicios {
+        transform: scale(1);
+        transform-origin: 0 0;
+    }
+
+}
+
+.fotos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    img {
+        flex: 1 0 auto;
+    }
 }
