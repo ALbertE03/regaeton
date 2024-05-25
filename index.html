@@ -3,13 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reggaeton</title>
     <h1>hola</h1>
 </head>
 
 <body>
+    <script>
+        const data = null;
 
+        const xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener('readystatechange', function () {
+            if (this.readyState === this.DONE) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open('GET', 'https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5');
+        xhr.setRequestHeader('x-rapidapi-key', '562c7281d4msh24bfb8276874a39p1bad78jsn99d1048ac0f4');
+        xhr.setRequestHeader('x-rapidapi-host', 'spotify23.p.rapidapi.com');
+
+        xhr.send(data);</script>
 </body>
 
 </html>
