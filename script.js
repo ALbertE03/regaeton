@@ -203,7 +203,7 @@ fetch('data/data.json')
                     .filter(word => word.length > 3 && !stopwords.includes(word)); // Filtrar stopwords y palabras cortas
             }
             // Contar la frecuencia de cada palabra
-            var wordFrequency = tokenizeAndFilter(text).reduce((freq, word) => {
+            let wordFrequency = tokenizeAndFilter(text).reduce((freq, word) => {
                 freq[word] = (freq[word] || 0) + 1;
                 return freq
             }, {});
