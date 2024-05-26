@@ -1,0 +1,62 @@
+a = """"Zúmbale mambo, pa' que mis gatas prendan los motore'",
+      "Zúmbale mambo, pa' que mis gatas prendan los motore'", 
+      "Zúmbale mambo, pa' que mis gatas prendan los motore'",
+      "Que se preparen, que lo que viene es pa' que le den (¡duro!)",
+      "Mamita, yo sé que tú no te me vas a quitar (¡duro!)",
+      "Lo que me gusta es que tú te dejas llevar (¡duro!)",
+      "Todos los weekend, ella sale a vacilar (¡duro!)",
+      "Mi gata no para de janguear, porque",
+      "A ella le gusta la gasolina (¡Dame más gasolina!)",
+      "Cómo le encanta la gasolina (¡Dame más gasolina!)",
+      "A ella le gusta la gasolina (¡Dame más gasolina!)", 
+      "Cómo le encanta la gasolina (¡Dame más gasolina!)",
+      "Ella prende las turbinas, no discrimina",
+      "No se pierde ni un party de marquesina",
+      "Se acicala hasta pa' la esquina",
+      "Luce tan bien que hasta la sombra le combina",
+      "Asesina, me domina",
+      "Janguea en carros, motoras y limosinas",
+      "Llena su tanque de adrenalina", 
+      "Cuando escucha reguetón en las bocinas",
+      "A ella le gusta la gasolina (¡Dame más gasolina!)",
+      "Cómo le encanta la gasolina (¡Dame más gasolina!)",
+      "A ella le gusta la gasolina (¡Dame más gasolina!)",
+      "Cómo le encanta la gasolina (¡Dame más gasolina!) yo'",
+      "Aquí somos los mejores, no te me ajore'",
+      "En la pista, nos llaman Los Matadore'",
+      "Tú haces que cualquiera se enamore", 
+      "Cuando bailas al ritmo de los tambore'",
+      "Esto va pa' las gatas de to' colore'",
+      "Pa' las mayore', pa' las menore'",
+      "Pa' las que son más zorras que los cazadore'",
+      "Pa' las mujeres que no apagan sus motore'", 
+      "Tenemos tú y yo algo pendiente",
+      "Tú me debe' algo y lo sabe'",
+      "Conmigo ella se pierde",
+      "No le rinde cuentas a nadie",
+      "Tenemos tú y yo algo pendiente", 
+      "Tú me debe' algo y lo sabe'",
+      "Conmigo ella se pierde",
+      "No le rinde cuentas a nadie",
+      "Zúmbale mambo, pa' que mis gatas prendan los motore'",
+      "Zúmbale mambo, pa' que mis gatas prendan los motore'",
+      "Zúmbale mambo, pa' que mis gatas prendan los motore'",
+      "Que se preparen, que lo que viene es pa' que le den (¡duro!)",
+      "Mamita, yo sé que tú no te me vas a quitar (¡duro!)",
+      "Lo que me gusta es que tú te dejas llevar (¡duro!)",
+      "Todos los weekend, ella sale a vacilar (¡duro!)",
+      "Mi gata no para de janguear, porque", 
+      "A ella le gusta la gasolina (¡Dame más gasolina!)",
+      "Cómo le encanta la gasolina (¡Dame más gasolina!)",
+      "A ella le gusta la gasolina (¡Dame más gasolina!)",
+      "Cómo le encanta la gasolina (¡Dame más gasolina!)"""
+a = (
+    a.replace(",", "")
+    .replace("'", "")
+    .replace("-", " ")
+    .replace("?", " ")
+    .replace("¿", "")
+    .replace("!", " ")
+    .replace("¡", " ")
+)
+print(a)
