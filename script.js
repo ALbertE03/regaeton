@@ -4,36 +4,23 @@ const modalTitle = document.getElementById("modalTitle");
 const modalInfo = document.getElementById("modalInfo");
 var graphCanvas = document.getElementById('graph')
 var ctx = graphCanvas.getContext('2d');
-var graphCanvas1 = document.getElementById('graph1')
-var ctx1 = graphCanvas.getContext('2d');
-var graphCanvas2 = document.getElementById('graph2')
-var ctx2 = graphCanvas.getContext('2d');
-var graphCanvas3 = document.getElementById('graph3')
-var ctx3 = graphCanvas.getContext('2d');
-var charts = {};
-var as;
+let char;
 function showModal(img) {
     var imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
     modalTitle.textContent = imageInfo.title;
     modalInfo.textContent = imageInfo.info;
     modal.style.display = "block";
-    var chartId = 'chart-' + img.id;
-
-    s
-    if (charts[chartId]) {
-        charts[chartId].destroy();
-    }
 
 
     if (img.id === "Daddy") {
         generateGraph(ctx, dataDaddy)
     } else if (img.id === 'DonOmar') {
-        generateGraph(ctx1, dataDonOmar)
+        generateGraph(ctx, dataDonOmar)
     } else if (img.id === 'Vico') {
-        generateGraph(ctx2, dataVico)
+        generateGraph(ctx, dataVico)
     } else if (img.id === 'Tego') {
-        generateGraph(ctx3, dataTego)
+        generateGraph(ctx, dataTego)
 
     }
 
@@ -41,8 +28,7 @@ function showModal(img) {
 
 function closeModal() {
     modal.style.display = "none";
-    Object.values(charts).forEach(chart => chart.destroy());
-    charts = {};
+    eliminarGraph();
 }
 
 window.onclick = function (event) {
@@ -80,12 +66,18 @@ function getImageInfo(imageId) {
 }
 
 //gráficos
-
+function eliminarGraph() {
+    if (char) {
+        char.destroy()
+    }
+}
 function generateGraph(ctx, data) {
-    return new Chart(ctx, {
+    return char = new Chart(ctx, {
         type: 'line',
         data: data,
         options: {
+            responsive: true,
+            maintainAspectRadio: false,
             scales: {
                 y: {
                     beginAtZero: true
