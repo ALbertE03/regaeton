@@ -12,7 +12,6 @@ function showModal(img) {
     modalInfo.textContent = imageInfo.info;
     modal.style.display = "block";
 
-
     if (img.id === "Daddy") {
         generateGraph(ctx, dataDaddy)
     } else if (img.id === 'DonOmar') {
