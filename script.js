@@ -6,6 +6,13 @@ let graphCanvas = document.getElementById('graph')
 let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
 let char;
+document.addEventListener('click', function (event) {
+    let dropdownContent = document.getElementById('dropdown-content');
+    let dropbtn = document.getElementById('dropbtn');
+    if (event.target !== dropbtn && !dropbtn.contains(event.target)) {
+        dropdownContent.style.display = 'none';
+    }
+});
 function showModal(img) {
     let imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
