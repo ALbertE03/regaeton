@@ -34,7 +34,7 @@ function closeModal() {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
-
+        eliminarGraph();
     }
 
 }
@@ -91,8 +91,8 @@ var dataDaddy = {
     datasets: [{
         label: 'Ventas de Daddy Yankee',
         data: [11242, 11249, 3, 5, 13, 4213],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1
     }]
 };
@@ -101,8 +101,8 @@ var dataVico = {
     datasets: [{
         label: 'Ventas de Vico',
         data: [1152, 1951, 315, 55, 52, 133],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1
     }]
 };
@@ -111,8 +111,8 @@ var dataTego = {
     datasets: [{
         label: 'Ventas de Tego',
         data: [122, 192, 333, 544, 22, 3441],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1
     }]
 };
