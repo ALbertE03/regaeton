@@ -1,14 +1,15 @@
-
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
 const modalTitle = document.getElementById("modalTitle");
 const modalInfo = document.getElementById("modalInfo");
-var graphCanvas = document.getElementById('graph')
-var ctx = graphCanvas.getContext('2d');
+let graphCanvas = document.getElementById('graph')
+let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
+
 let char;
+
 function showModal(img) {
-    var imageInfo = getImageInfo(img.id);
+    let imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
     modalTitle.textContent = imageInfo.title;
     modalInfo.textContent = imageInfo.info;
@@ -110,7 +111,7 @@ function graph1(ctx1, words, counts) {
 
 
 // datos
-var dataDaddy = {
+let dataDaddy = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
         label: 'Ventas de Daddy Yankee',
@@ -120,7 +121,7 @@ var dataDaddy = {
         borderWidth: 1
     }]
 };
-var dataVico = {
+let dataVico = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
         label: 'Ventas de Vico',
@@ -130,7 +131,7 @@ var dataVico = {
         borderWidth: 1
     }]
 };
-var dataTego = {
+let dataTego = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
         label: 'Ventas de Tego',
@@ -141,7 +142,7 @@ var dataTego = {
     }]
 };
 
-var dataDonOmar = {
+let dataDonOmar = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
         label: 'Ventas de Don Omar',
@@ -205,7 +206,7 @@ fetch('data/data.json')
             const sortedWords = Object.entries(wordFrequency)
                 .sort((a, b) => b[1] - a[1])
                 .map(([word, count]) => ({ word, count }));
-            // las 10 palabras más repetidas
+            // las 15 palabras más repetidas
             const topWords = sortedWords.slice(0, 15);
             const words = topWords.map(item => item.word);
             const counts = topWords.map(item => item.count);
@@ -216,4 +217,6 @@ fetch('data/data.json')
     .catch(error => {
         console.error("error al cargar el Json " + error)
     });
+
+
 
