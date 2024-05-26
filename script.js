@@ -83,8 +83,13 @@ function generateGraph(ctx, data) {
             responsive: true,
             scales: {
                 y: {
+                    ticks: { color: "white" },
                     beginAtZero: true
                 }
+            }, x: {
+                ticks: {
+                    color: "white"
+                },
             }
         }
     });
@@ -99,16 +104,23 @@ function graph1(ctx1, words, counts) {
                 label: 'Frecuencia de palabras (Antes)',
                 data: counts,
                 backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
+                borderColor: 'white',
+                pointBackgroundColor: "white",
+                borderWidth: 1,
+                pointBorderColor: "white",
             }]
         },
         options: {
             responsive: true,
             scales: {
                 y: {
+                    ticks: { color: "white" },
                     beginAtZero: true
                 }
+            }, x: {
+                ticks: {
+                    color: "white"
+                },
             }
         }
     });
@@ -121,8 +133,8 @@ let dataDaddy = {
     datasets: [{
         label: 'Ventas de Daddy Yankee',
         data: [11242, 11249, 3, 5, 13, 4213],
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: 'white',
+        borderColor: 'white',
         borderWidth: 1
     }]
 };
@@ -131,8 +143,8 @@ let dataVico = {
     datasets: [{
         label: 'Ventas de Vico',
         data: [1152, 1951, 315, 55, 52, 133],
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: 'white',
+        borderColor: 'white',
         borderWidth: 1
     }]
 };
@@ -141,8 +153,8 @@ let dataTego = {
     datasets: [{
         label: 'Ventas de Tego',
         data: [122, 192, 333, 544, 22, 3441],
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: 'white',
+        borderColor: 'white',
         borderWidth: 1
     }]
 };
@@ -152,9 +164,9 @@ let dataDonOmar = {
     datasets: [{
         label: 'Ventas de Don Omar',
         data: [8, 15, 5, 10, 4, 6],
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1
+        backgroundColor: 'white',
+        borderColor: 'white',
+        borderWidth: 1,
     }]
 };
 
