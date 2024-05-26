@@ -6,9 +6,11 @@ p {
     text-align: justify;
     line-height: 1.5;
     line-height: 24px;
+    font-family: cursive;
 }
 
 h2 {
+    font-family: cursive;
     color: #f1eded;
     color: rgb(245, 240, 240);
     color: rgba(233, 230, 230, 0.8);
@@ -19,6 +21,7 @@ h2 {
 }
 
 h1 {
+    font-family: cursive;
     color: #f1eded;
     color: rgb(245, 240, 240);
     color: rgba(233, 230, 230, 0.8);
