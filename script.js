@@ -5,9 +5,7 @@ const modalInfo = document.getElementById("modalInfo");
 let graphCanvas = document.getElementById('graph')
 let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
-
 let char;
-
 function showModal(img) {
     let imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
