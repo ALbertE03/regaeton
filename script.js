@@ -11,6 +11,7 @@ var ctx2 = graphCanvas.getContext('2d');
 var graphCanvas3 = document.getElementById('graph3')
 var ctx3 = graphCanvas.getContext('2d');
 var charts = {};
+var as;
 function showModal(img) {
     var imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
