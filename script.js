@@ -128,7 +128,7 @@ var dataDonOmar = {
 
 
 
-fetch('https://github.com/ALbertE03/regaeton/blob/main/data/data.json')
+fetch('/regaeton/data/data.json')
     .then(response => response.json())
     .then(data => {
         console.log(data)
