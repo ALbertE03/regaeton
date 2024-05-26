@@ -1,98 +1,105 @@
-a = """Platinum Studio (respect)
-Don, Don, Don, Don
+a = """Yo tengo un ángel
+Que me protege de los envidiosos
+Y ese ángel me protege
+Y no le importa si yo soy un vicioso
 
-Salió el Sol (Don, Don)
-Cuerpo bronceado y sus amigas buscaban acción (all the sexy)
-La canción (all my sexy ladies)
-Que causa en ellas y sus cuerpos esa sensación (more reggaeton)
-Reggaeton
-Piden reggaeton
-Del de Don (pon di river, pon di river, pon di river, pon di river)
-Sientan la presión (pon di bank, pon di bank, pon di bank, pon di bank)
+Yo tengo un ángel que siempre está detrás de mí
+Y un ejército de guerreros
+Y ese ángel me protege
+De los que no son sinceros
 
-Ella baila hasta sola
-Como grande mueve la cola
-La da en pique y la vuela con rola
-Dale y sin miedo rompe la consola
-La pistola, chambonea (reload)
-Ella lo vuelve loco como se menea
-Bailando pura candela
-Lo vuelve loco cuando se acelera
-Y pela
+Comienzo el drama me levanto de la cama
+Me cepillo los dientes y miro el sol salir
+Prendo una vela con mucha cautela
+Y afuera escucho el barrio sin saber quién va a morir
 
-Y yo quiero saber cómo es que baila la Julieta
-(Y yo quiero saber cómo es que baila la Julieta)
-Julieta baila sexy con la mano en la cabeza (my sexy Julieta)
-(Julieta baila sexy con la mano en la cabeza)
+Y es que el destino no está escrito
+Lo escribimos nosotros
+A nosotros nos toca el destino escribir
+Y aunque la vida este dura y el gobierno lo empeore
+A nosotros nos toca decidir
 
-Salió el Sol (Don, Don)
-Cuerpo bronceado y sus amigas buscaban acción (aquella canción)
-La canción
-Que causa en ellas y sus cuerpos esa sensación (that's it, need more reggaeton)
-Reggaeton
-Piden reggaeton
-Del de Don (pon di river, pon di river, pon di river, pon di river)
-Sientan la presión (pon di bank, pon di bank, pon di bank, pon di bank)
+Hay días en que yo cruzo el barrio
+En pleno tiroteo él va detrás de mí
+Si me aborrezco a veces de estar vivo
+Y pierdo la esperanza el va detrás de mí
+Si me confundo y pierdo la fe
 
-Va en su viaje (déjala)
-No amarra fuego (pélala)
-Se soltó el pelo (mándala)
-Se rompió el traje (contrólala)
-Lo de ella es playa y arena (yes)
-Se excita cuando el Sol la quema
-Quiere reguetón, discoteca pa' la nena (more fire)
-Se le mete en las venas cuando el negro suena
+A medio caminar el ángel me dice a mí
+Levántate de la cama
+Ve y enfréntate a la vida
+Porque tú naciste
+Pa sobrevivir
 
-Y yo quiero saber cómo es que baila la Julieta
-(Y yo quiero saber cómo es que baila la Julieta)
-Julieta baila sexy con la mano en la cabeza
-(Julieta baila sexy con la mano en la cabeza)
+Yo tengo un ángel
+Que me protege de los envidiosos
+Y ese ángel me protege
+Y no le importa si yo soy un vicioso
 
-Salió el Sol (salió el Sol)
-Cuerpo bronceado y sus amigas buscaban acción (all my sexy)
-La canción
-Que causa en ellas y sus cuerpos esa sensación (more, more, more reggaeton)
-Reggaeton
-Piden reggaeton
-Del de Don (pon di river, pon di river, pon di river, pon di river)
-Sientan la presión (pon di bank, pon di bank, pon di bank, pon di bank)
+Yo tengo un ángel que siempre está detrás de mí
+Y un ejército de guerreros
+Y ese ángel me protege
+De los que no son sinceros
 
-Respect to all the Jamaica crew
-Señores, han sido testigos de cómo la evolución los ha hecho víctimas de la misma
-Platinum Studio, Julian
+Y les confieso que lo antes escrito en este verso
+Es el relato del dolor que me querían partir los huesos
+Como todo ser humano he tenido mis tropiezos
+Pero el ángel me acompaña aun que no me quede un peso
+Su protección no tiene precio
+Más allá de lo real, espiritual, sé que no me va a fallar
+Él me ha visto reír pero también llorar
+Cada cual con su ángel, con su forma de bregar
 
-Y Don, woah
-Don, woah
-Don, woah
-Ja, tú sabes
-King of Kings
+Hay días en que yo cruzo el barrio
+En pleno tiroteo el va detrás de mí
+Si me aborrezco a veces de estar vivo
+Y pierdo la esperanza el va detrás de mí
 
-Salió el Sol
-Cuerpo bronceado y sus amigas buscaban acción
-La canción (don't even think about it, papi)
-Que causa en ellas y sus cuerpos esa sensación (you'll never be like this, never)
-Reggaeton (more fire, more fire, more fire, more fire)
-Piden reggaeton (more fire, more fire, more fire, more fire)
-Del de Don (pon di river, pon di river, pon di river, pon di river)
-Sientan la presión (pon di bank, pon di bank, pon di bank, pon di bank)
+Si me confundo y pierdo la fe
+A medio caminar el ángel me dice a mí
+Levántate de la cama
+Ve y enfréntate a la vida
+Porque tú naciste
+Pa sobrevivir
 
-Whine it
-Whine it, whine it (salió el Sol)
-Whine it, whine it
-Whine it, whine it
-(Pon di river) whine it, whine it
-(Pon di bank) whine it, whine it
-(Pon di bank) whine it, whine it
+Levántate de la cama
+Ve y enfréntate a la vida
+Porque tú naciste
+Pa sobrevivir
 
-Salió el Sol (pon di river, pon di river)
-Salió el Sol (pon di bank, pon di bank)
-Salió el Sol (pon di river, pon di river)
-Salió el Sol (pon di bank, pon di bank)
+Yo tengo un ángel
+Que me protege de los envidiosos
+Y ese ángel me protege
+Y no le importa si yo soy un vicioso
 
-Un número uno, papi
-No hay discusión
-Nosotro' no fallamo'
-King of Kings"""
+Yo tengo un ángel que siempre está detrás de mí
+Y un ejército de guerreros
+Y ese ángel me protege
+De los que no son sinceros
+
+Mi madre siempre me decía que yo tenía un ángel
+Oye, que siempre me estaba protegiendo
+Y ahora me doy cuenta que es verdad
+Yo no soy el único, todo el mundo tiene un ángel
+Detrás de él, lo que tiene es que conocerlo
+Y echar pa’lante la vida
+
+Hay días en que yo cruzo el barrio
+En pleno tiroteo el va detrás de mí
+Si me aborrezco a veces de estar vivo
+Y pierdo la esperanza el va detrás de mí
+
+Si me confundo y pierdo la fe
+A medio caminar el ángel me dice a mí
+Levántate de la cama
+Ve y enfréntate a la vida
+Porque tú naciste
+Pa sobrevivir
+
+Levántate de la cama
+Ve y enfréntate a la vida
+Porque tú naciste
+Pa sobrevivir"""
 a = (
     a.replace(",", "")
     .replace("'", "")

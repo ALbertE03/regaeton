@@ -83,15 +83,15 @@ function generateGraph(ctx, data) {
         }
     });
 }
-function graph1(ctx1, wordsD, countsD) {
+function graph1(ctx1, words, counts) {
     eliminarGraph()
     return char = new Chart(ctx1, {
         type: 'bar',
         data: {
-            labels: wordsD,
+            labels: words,
             datasets: [{
                 label: 'Frecuencia de palabras (Antes)',
-                data: countsD,
+                data: counts,
                 backgroundColor: 'rgba(54, 162, 235, 0.5)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
@@ -168,16 +168,25 @@ fetch('data/data.json')
         }
 
         const song1 = []
-        for (const dict of Object.values(data)) {
-            for (const lyrics of dict) {
-                if ("letra1" in lyrics) {
-                    song.push(lyrics["letra1"])
+        for (const dict1 of Object.values(data)) {
+            for (const lyrics1 of dict1) {
+                if ("letra1" in lyrics1) {
+                    song.push(lyrics1["letra1"])
+                }
+            }
+        }
+        const song2 = []
+        for (const dict2 of Object.values(data)) {
+            for (const lyrics2 of dict2) {
+                if ("letra2" in lyrics2) {
+                    song.push(lyrics2["letra2"])
                 }
             }
         }
         const letras0 = song.join(" ")
         const letras1 = song1.join(" ")
-        const letras = letras0 + letras1
+        const letras2 = song2.join(" ")
+        const letras = (letras0 + letras1) + letras2
         util(letras)
 
         function util(text) {
