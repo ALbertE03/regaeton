@@ -10,13 +10,20 @@ var graphCanvas2 = document.getElementById('graph2')
 var ctx2 = graphCanvas.getContext('2d');
 var graphCanvas3 = document.getElementById('graph3')
 var ctx3 = graphCanvas.getContext('2d');
-
+var charts = {};
 function showModal(img) {
     var imageInfo = getImageInfo(img.id);
     modalImage.src = img.src;
     modalTitle.textContent = imageInfo.title;
     modalInfo.textContent = imageInfo.info;
     modal.style.display = "block";
+    var chartId = 'chart-' + element.id;
+
+
+    if (charts[chartId]) {
+        charts[chartId].destroy();
+    }
+
 
     if (img.id === "Daddy") {
         generateGraph(ctx, dataDaddy)
