@@ -159,7 +159,6 @@ fetch('data/data.json')
     .then(data => {
         const song = []
         for (const dict of Object.values(data)) {
-
             for (const lyrics of dict) {
                 if ("letra" in lyrics) {
                     song.push(lyrics["letra"])
@@ -208,7 +207,6 @@ fetch('data/data.json')
                 .map(([word, count]) => ({ word, count }));
             // las 10 palabras más repetidas
             const topWords = sortedWords.slice(0, 15);
-            console.log(topWords)
             const words = topWords.map(item => item.word);
             const counts = topWords.map(item => item.count);
             graph1(ctx1, words, counts)
