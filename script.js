@@ -126,12 +126,14 @@ var dataDonOmar = {
     }]
 };
 
-fetch('/data/data.json')
+const jsonUrl = 'https://github.com/ALbertE03/regaeton/blob/main/data/data.json';
+
+fetch(jsonUrl)
     .then(response => response.json())
     .then(data => {
-
+        // Aquí puedes trabajar con los datos JSON obtenidos
         console.log(data);
     })
     .catch(error => {
-        console.error('Error al cargar el archivo JSON:', error);
+        console.error('Error al obtener el archivo JSON:', error);
     });
