@@ -1,8 +1,6 @@
 p {
     color: #f1eded;
-
     color: rgb(245, 240, 240);
-
     color: rgba(233, 230, 230, 0.8);
     text-size-adjust: calc();
     text-align: justify;
@@ -12,9 +10,7 @@ p {
 
 h2 {
     color: #f1eded;
-
     color: rgb(245, 240, 240);
-
     color: rgba(233, 230, 230, 0.8);
     text-size-adjust: calc();
     text-align: justify;
@@ -24,11 +20,8 @@ h2 {
 
 h1 {
     color: #f1eded;
-
     color: rgb(245, 240, 240);
-
     color: rgba(233, 230, 230, 0.8);
-
     text-size-adjust: calc();
     line-height: 1.5;
     line-height: 24px;
@@ -69,8 +62,6 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .timeline {
@@ -84,8 +75,6 @@ img:hover {
     padding: 0 20px;
     box-sizing: border-box;
     background-color: #333;
-
-
 }
 
 .timeline-content {
@@ -119,7 +108,6 @@ img:hover {
     justify-content: center;
     width: 100%;
     height: 100%;
-
 }
 
 .title2 {
@@ -149,7 +137,6 @@ img:hover {
     padding: 0 20px;
     box-sizing: border-box;
     background-color: #333;
-
 }
 
 @media screen and (min-width:0) {
@@ -157,7 +144,6 @@ img:hover {
         transform: scale(1);
         transform-origin: 0 0;
     }
-
 }
 
 
@@ -182,11 +168,7 @@ img:hover {
     .fotos-container img {
         width: 100%;
     }
-
 }
-
-
-
 
 .modal {
     display: none;
@@ -255,7 +237,6 @@ img:hover {
 }
 
 #modalInfo {
-
     text-align: justify;
     margin-top: 10px;
     font-size: 16px;
@@ -288,7 +269,6 @@ img:hover {
     background-color: #333;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -298,7 +278,6 @@ img:hover {
 body {
     font-family: Arial, sans-serif;
 }
-
 
 header {
     background-color: #333;
