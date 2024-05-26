@@ -216,7 +216,7 @@ img:hover {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(109, 131, 23);
 }
 
 .letras-actual {
@@ -229,5 +229,5 @@ img:hover {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(32, 208, 23);
 }
