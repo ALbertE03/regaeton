@@ -20,9 +20,7 @@ function showModal(img) {
         generateGraph(ctx, dataVico)
     } else if (img.id === 'Tego') {
         generateGraph(ctx, dataTego)
-
     }
-
 }
 
 function closeModal() {
@@ -35,7 +33,6 @@ window.onclick = function (event) {
         modal.style.display = "none";
         eliminarGraph();
     }
-
 }
 
 function getImageInfo(imageId) {
@@ -76,7 +73,6 @@ function generateGraph(ctx, data) {
         data: data,
         options: {
             responsive: true,
-            maintainAspectRadio: false,
             scales: {
                 y: {
                     beginAtZero: true
@@ -85,6 +81,9 @@ function generateGraph(ctx, data) {
         }
     });
 }
+
+
+// datos
 var dataDaddy = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
