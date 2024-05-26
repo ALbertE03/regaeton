@@ -208,6 +208,7 @@ fetch('data/data.json')
                 .map(([word, count]) => ({ word, count }));
             // las 10 palabras más repetidas
             const topWords = sortedWords.slice(0, 15);
+            console.log(topWords)
             const words = topWords.map(item => item.word);
             const counts = topWords.map(item => item.count);
             graph1(ctx1, words, counts)
