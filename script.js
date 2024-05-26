@@ -17,9 +17,9 @@ function showModal(img) {
     modalTitle.textContent = imageInfo.title;
     modalInfo.textContent = imageInfo.info;
     modal.style.display = "block";
-    var chartId = 'chart-' + element.id;
+    var chartId = 'chart-' + img.id;
 
-
+    s
     if (charts[chartId]) {
         charts[chartId].destroy();
     }
