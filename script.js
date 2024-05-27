@@ -81,6 +81,7 @@ function generateGraph(ctx, data) {
         data: data,
         options: {
             responsive: true,
+            maintainAspectRadio: false,
             scales: {
                 y: {
                     ticks: { color: "white" },
@@ -111,6 +112,7 @@ function graph1(ctx1, words, counts) {
             }]
         },
         options: {
+            maintainAspectRadio: false,
             responsive: true,
             scales: {
                 y: {
