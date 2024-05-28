@@ -106,8 +106,6 @@ function generateGraph(ctx, data) {
         type: 'line',
         data: data,
         options: {
-            responsive: true,
-            maintainAspectRadio: false,
             scales: {
                 y: {
                     ticks: { color: "white" },
