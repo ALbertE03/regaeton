@@ -103,22 +103,13 @@ function eliminarGraph() {
 
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
-        type: 'line',
+        type: 'pie',
         data: data,
         options: {
             responsive: true,
             maintainAspectRadio: false,
             response: true,
-            scales: {
-                y: {
-                    ticks: { color: "white" },
-                    beginAtZero: true
-                }
-            }, x: {
-                ticks: {
-                    color: "white"
-                },
-            }
+
         }
     });
 }
@@ -196,7 +187,16 @@ let dataDaddy = {
     datasets: [{
         label: 'Oyentes en Spotify de Daddy Yankee',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -207,7 +207,16 @@ let dataKarol = {
     datasets: [{
         label: ' Oyentes en Spotify de Karol G',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -219,7 +228,16 @@ let dataBad = {
     datasets: [{
         label: 'Oyentes en Spotify de Bad Bunny',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -230,7 +248,16 @@ let dataRauw = {
     datasets: [{
         label: 'Oyentes en Spotify de Rauw Alejandro',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -241,7 +268,16 @@ let dataFeid = {
     datasets: [{
         label: 'Oyentes en Spotify de Feid',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -252,7 +288,16 @@ let dataVico = {
     datasets: [{
         label: 'Oyentes en Spotify de Vico',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -263,7 +308,16 @@ let dataTego = {
     datasets: [{
         label: 'Oyentes en Spotify de Tego',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1
     }]
@@ -274,7 +328,16 @@ let dataDonOmar = {
     datasets: [{
         label: 'Oyentes en Spotify de Don Omar',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: 'white',
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56',
+            '#4BC0C0',
+            '#9966FF',
+            '#FF9F40',
+            '#FF6385',
+            '#36A285'
+        ],
         borderColor: 'white',
         borderWidth: 1,
     }]
