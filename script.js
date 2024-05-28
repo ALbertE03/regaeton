@@ -74,12 +74,12 @@ function getImageInfo(imageId) {
         },
         "Bad": {
 
-            title: "Bad",
+            title: "Bad Bunny",
             info: "Benito Antonio Martínez Ocasio, nacido el 10 de marzo de 1994, conocido profesionalmente como Bad Bunny, es un rapero, cantante y productor discográfico puertorriqueño"
         },
         "Karol": {
 
-            title: "Karol",
+            title: "Karol G",
             info: "Carolina Giraldo Navarro nacida el 24 de agosto de 1991, conocida profesionalmente como Karol G, es una cantante colombiana."
         },
         "Feid": {
@@ -89,7 +89,7 @@ function getImageInfo(imageId) {
         },
         "Rauw": {
 
-            title: "Rauw",
+            title: "Rauw Alejandro",
             info: "Raúl Alejandro Ocasio Ruiz, nacido el 10 de enero de 1993, conocido profesionalmente como Rauw Alejandro, es un cantante y rapero puertorriqueño. Conocido como el 'Rey del Reggaetón Moderno'"
         }
     };
