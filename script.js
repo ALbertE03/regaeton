@@ -7,6 +7,9 @@ let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
 const ctx2 = document.getElementById('actual').getContext('2d');
 let char;
+
+
+
 document.addEventListener('click', function (event) {
     let dropdownContent = document.getElementById('dropdown-content');
     let dropbtn = document.getElementById('dropbtn');
@@ -55,7 +58,6 @@ window.onclick = function (event) {
 function getImageInfo(imageId) {
     const imageInfo = {
         "Daddy": {
-
             title: "Daddy Yankee",
             info: "Ramón Luis Ayala Rodríguez, San Juan, Puerto Rico; 3 de febrero de 1977, conocido artísticamente como Daddy Yankee, es un cantante, compositor, productor discográfico, filántropo, locutor de radio​ y empresario puertorriqueño.​"
         },
@@ -68,27 +70,22 @@ function getImageInfo(imageId) {
             info: "Vico C es un rapero y compositor puertorriqueño, considerado uno de los pioneros del reguetón y uno de los artistas más influyentes del género en sus inicios."
         },
         "Tego": {
-
             title: "Tego Calderón",
             info: "Tego Calderón es un cantante, rapero y compositor puertorriqueño. Es considerado uno de los artistas más importantes del reguetón y ha contribuido a la expansión del género a nivel mundial."
         },
         "Bad": {
-
             title: "Bad Bunny",
             info: "Benito Antonio Martínez Ocasio, nacido el 10 de marzo de 1994, conocido profesionalmente como Bad Bunny, es un rapero, cantante y productor discográfico puertorriqueño"
         },
         "Karol": {
-
             title: "Karol G",
             info: "Carolina Giraldo Navarro nacida el 24 de agosto de 1991, conocida profesionalmente como Karol G, es una cantante colombiana."
         },
         "Feid": {
-
             title: "Feid",
             info: "Salomón Villada Hoyos, nacido el 19 de agosto de 1992, más conocido por sus nombres artísticos Feid y Ferxxo, es un cantante, compositor y productor discográfico colombiano"
         },
         "Rauw": {
-
             title: "Rauw Alejandro",
             info: "Raúl Alejandro Ocasio Ruiz, nacido el 10 de enero de 1993, conocido profesionalmente como Rauw Alejandro, es un cantante y rapero puertorriqueño. Conocido como el 'Rey del Reggaetón Moderno'"
         }
@@ -103,6 +100,7 @@ function eliminarGraph() {
         char.destroy()
     }
 }
+
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
         type: 'line',
@@ -123,8 +121,9 @@ function generateGraph(ctx, data) {
         }
     });
 }
-function graph2(ctx1, words, counts) {
-    return char = new Chart(ctx1, {
+
+function graph2(ctx2, words, counts) {
+    return char = new Chart(ctx2, {
         type: 'bar',
         data: {
             labels: words,
@@ -154,6 +153,7 @@ function graph2(ctx1, words, counts) {
         }
     });
 }
+
 function graph1(ctx1, words, counts) {
     eliminarGraph()
     return char = new Chart(ctx1, {
@@ -186,73 +186,80 @@ function graph1(ctx1, words, counts) {
         }
     });
 }
+
 // datos
 let dataDaddy = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Daddy Yankee',
-        data: [11242, 11249, 3, 5, 13, 4213],
+        label: 'Oyentes en Spotify de Daddy Yankee',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 };
+
 let dataKarol = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Karol G',
-        data: [11242, 11249, 3, 5, 13, 4213],
+        label: ' Oyentes en Spotify de Karol G',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 
 };
+
 let dataBad = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Bad Bunny',
-        data: [11242, 11249, 3, 5, 13, 4213],
+        label: 'Oyentes en Spotify de Bad Bunny',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 };
+
 let dataRauw = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Rauw Alejandro',
-        data: [11242, 11249, 3, 5, 13, 4213],
+        label: 'Oyentes en Spotify de Rauw Alejandro',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 };
+
 let dataFeid = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Feid',
-        data: [11242, 11249, 3, 5, 13, 4213],
+        label: 'Oyentes en Spotify de Feid',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 };
+
 let dataVico = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Vico',
-        data: [1152, 1951, 315, 55, 52, 133],
+        label: 'Oyentes en Spotify de Vico',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
     }]
 };
+
 let dataTego = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Tego',
-        data: [122, 192, 333, 544, 22, 3441],
+        label: 'Oyentes en Spotify de Tego',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1
@@ -260,17 +267,18 @@ let dataTego = {
 };
 
 let dataDonOmar = {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Ventas de Don Omar',
-        data: [8, 15, 5, 10, 4, 6],
+        label: 'Oyentes en Spotify de Don Omar',
+        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: 'white',
         borderColor: 'white',
         borderWidth: 1,
     }]
 };
+
 //Json1
-fetch('/regaeton/data/data.json')
+fetch('data/data.json')
     .then(response => response.json())
     .then(data => {
         const song = []
@@ -302,6 +310,7 @@ fetch('/regaeton/data/data.json')
         const letras1 = song1.join(" ")
         const letras2 = song2.join(" ")
         const letras = (letras0 + letras1) + letras2
+
         util(letras)
 
         function util(text) {
@@ -333,10 +342,8 @@ fetch('/regaeton/data/data.json')
         console.error("error al cargar el Json " + error)
     });
 
-
-
 //json2
-fetch('/regaeton/data/data1.json')
+fetch('data/data1.json')
     .then(response => response.json())
     .then(data => {
         const song_actual = []
@@ -389,15 +396,12 @@ fetch('/regaeton/data/data1.json')
                 .map(([word, count]) => ({ word, count }));
             // las 15 palabras más repetidas
             const topWords = sortedWords.slice(0, 15);
-            const words = topWords.map(item => item.word);
-            const counts = topWords.map(item => item.count);
-            graph2(ctx2, words, counts)
+            const words1 = topWords.map(item => item.word);
+            const counts1 = topWords.map(item => item.count);
+            graph2(ctx2, words1, counts1)
         }
 
     })
     .catch(error => {
         console.error("error al cargar el Json " + error)
     });
-
-
-
