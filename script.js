@@ -29,6 +29,14 @@ function showModal(img) {
         generateGraph(ctx, dataVico)
     } else if (img.id === 'Tego') {
         generateGraph(ctx, dataTego)
+    } else if (img.id === "Bad") {
+        generateGraph(ctx, dataBad)
+    } else if (img.id === "Karol") {
+        generateGraph(ctx, dataKarol)
+    } else if (img.id === "Feid") {
+        generateGraph(ctx, dataFeid)
+    } else if (img.id === "Rauw") {
+        generateGraph(ctx, dataRauw)
     }
 }
 
@@ -49,8 +57,7 @@ function getImageInfo(imageId) {
         "Daddy": {
 
             title: "Daddy Yankee",
-            info: "Ramón Luis Ayala Rodríguez (San Juan, Puerto Rico; 3 de febrero de 1977), conocido artísticamente como Daddy Yankee, es un cantante, compositor, productor discográfico, filántropo, locutor de radio​ y empresario puertorriqueño.​ Es considerado por los críticos y fanáticos de la música, como uno de los exponentes más significativos e influyentes en la historia del género Urbano y Cristiano. reguetón.​ Yankee acuñó la palabra «reguetón» en 1991 para describir el género musical que estaba surgiendo en Puerto Rico y que posteriormente se expandiría internacionalmente.​\
-                    Es uno uno de los artistas de música latina más vendidos de todos los tiempos con más de 30 millones de ventas. En 2022 el artista fue reconocido por Billboard como Salón de la Fama."
+            info: "Ramón Luis Ayala Rodríguez, San Juan, Puerto Rico; 3 de febrero de 1977, conocido artísticamente como Daddy Yankee, es un cantante, compositor, productor discográfico, filántropo, locutor de radio​ y empresario puertorriqueño.​"
         },
         "DonOmar": {
             title: "Don Omar",
@@ -64,6 +71,26 @@ function getImageInfo(imageId) {
 
             title: "Tego Calderón",
             info: "Tego Calderón es un cantante, rapero y compositor puertorriqueño. Es considerado uno de los artistas más importantes del reguetón y ha contribuido a la expansión del género a nivel mundial."
+        },
+        "Bad": {
+
+            title: "Bad",
+            info: "Benito Antonio Martínez Ocasio, nacido el 10 de marzo de 1994, conocido profesionalmente como Bad Bunny, es un rapero, cantante y productor discográfico puertorriqueño"
+        },
+        "Karol": {
+
+            title: "Karol",
+            info: "Carolina Giraldo Navarro nacida el 24 de agosto de 1991, conocida profesionalmente como Karol G, es una cantante colombiana."
+        },
+        "Feid": {
+
+            title: "Feid",
+            info: "Salomón Villada Hoyos, nacido el 19 de agosto de 1992, más conocido por sus nombres artísticos Feid y Ferxxo, es un cantante, compositor y productor discográfico colombiano"
+        },
+        "Rauw": {
+
+            title: "Rauw",
+            info: "Raúl Alejandro Ocasio Ruiz, nacido el 10 de enero de 1993, conocido profesionalmente como Rauw Alejandro, es un cantante y rapero puertorriqueño. Conocido como el 'Rey del Reggaetón Moderno'"
         }
     };
 
@@ -127,8 +154,6 @@ function graph2(ctx1, words, counts) {
         }
     });
 }
-
-
 function graph1(ctx1, words, counts) {
     eliminarGraph()
     return char = new Chart(ctx1, {
@@ -161,13 +186,52 @@ function graph1(ctx1, words, counts) {
         }
     });
 }
-
-
 // datos
 let dataDaddy = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
     datasets: [{
         label: 'Ventas de Daddy Yankee',
+        data: [11242, 11249, 3, 5, 13, 4213],
+        backgroundColor: 'white',
+        borderColor: 'white',
+        borderWidth: 1
+    }]
+};
+let dataKarol = {
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    datasets: [{
+        label: 'Ventas de Karol G',
+        data: [11242, 11249, 3, 5, 13, 4213],
+        backgroundColor: 'white',
+        borderColor: 'white',
+        borderWidth: 1
+    }]
+
+};
+let dataBad = {
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    datasets: [{
+        label: 'Ventas de Bad Bunny',
+        data: [11242, 11249, 3, 5, 13, 4213],
+        backgroundColor: 'white',
+        borderColor: 'white',
+        borderWidth: 1
+    }]
+};
+let dataRauw = {
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    datasets: [{
+        label: 'Ventas de Rauw Alejandro',
+        data: [11242, 11249, 3, 5, 13, 4213],
+        backgroundColor: 'white',
+        borderColor: 'white',
+        borderWidth: 1
+    }]
+};
+let dataFeid = {
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+    datasets: [{
+        label: 'Ventas de Feid',
         data: [11242, 11249, 3, 5, 13, 4213],
         backgroundColor: 'white',
         borderColor: 'white',
@@ -205,8 +269,6 @@ let dataDonOmar = {
         borderWidth: 1,
     }]
 };
-
-
 //Json1
 fetch('data/data.json')
     .then(response => response.json())
