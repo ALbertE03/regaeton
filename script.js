@@ -270,7 +270,7 @@ let dataDonOmar = {
     }]
 };
 //Json1
-fetch('data/data.json')
+fetch('/regaeton/data/data.json')
     .then(response => response.json())
     .then(data => {
         const song = []
@@ -336,7 +336,7 @@ fetch('data/data.json')
 
 
 //json2
-fetch('data/data1.json')
+fetch('/regaeton/data/data1.json')
     .then(response => response.json())
     .then(data => {
         const song_actual = []
