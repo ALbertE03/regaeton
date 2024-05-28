@@ -185,17 +185,17 @@ function graph1(ctx1, words, counts) {
 let dataDaddy = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Daddy Yankee',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -205,17 +205,17 @@ let dataDaddy = {
 let dataKarol = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: ' Oyentes en Spotify de Karol G',
+        label: ' Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -226,17 +226,17 @@ let dataKarol = {
 let dataBad = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Bad Bunny',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -246,17 +246,17 @@ let dataBad = {
 let dataRauw = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Rauw Alejandro',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -266,17 +266,17 @@ let dataRauw = {
 let dataFeid = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Feid',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -286,17 +286,17 @@ let dataFeid = {
 let dataVico = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Vico',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -306,17 +306,17 @@ let dataVico = {
 let dataTego = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Tego',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1
@@ -326,17 +326,17 @@ let dataTego = {
 let dataDonOmar = {
     labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
     datasets: [{
-        label: 'Oyentes en Spotify de Don Omar',
+        label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-            '#FF6385',
-            '#36A285'
+            '#d3d3d3',
+            '#a9a9a9',
+            '#f5f5dc',
+            '#ffc0cb',
+            '#add8e6',
+            '#c1e1c5',
+            '#e0b1cb',
+            '#ffdab9'
         ],
         borderColor: 'white',
         borderWidth: 1,
