@@ -108,7 +108,8 @@ function generateGraph(ctx, data) {
         options: {
             responsive: true,
             maintainAspectRadio: false,
-            response: true,
+            response: true
+
 
         }
     });
