@@ -103,13 +103,55 @@ function eliminarGraph() {
 
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
-        type: 'pie',
-        data: data,
+        type: 'bar',
+        data: data, datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }], datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }], datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }], datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }], datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }], datasets: [{
+            label: 'Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: ['#d3d3d3'],
+            borderColor: 'white',
+            borderWidth: 1
+        }],
+        datasets: [{
+            label: ' Oyentes en Spotify',
+            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
+            backgroundColor: '#d3d3d3',
+            borderColor: 'white',
+            borderWidth: 1
+        }],
         options: {
             responsive: true,
             maintainAspectRadio: false,
             response: true
-
 
         }
     });
@@ -188,16 +230,13 @@ let dataDaddy = {
     datasets: [{
         label: 'Oyentes en Spotify',
         data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
+        backgroundColor: ['#d3d3d3', '#a9a9a9',
             '#f5f5dc',
             '#ffc0cb',
             '#add8e6',
             '#c1e1c5',
             '#e0b1cb',
-            '#ffdab9'
-        ],
+            '#ffdab9'],
         borderColor: 'white',
         borderWidth: 1
     }]
