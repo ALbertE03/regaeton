@@ -22,6 +22,8 @@ h2 {
 }
 
 h1 {
+    align-items: center;
+    text-align: center;
     font-size: xx-large;
     font-family: cursive;
     color: #f1eded;
@@ -145,12 +147,24 @@ img:hover {
 }
 
 @media screen and (min-width:0) {
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-size: xx-large;
+        font-family: cursive;
+        color: #f1eded;
+        color: rgb(245, 240, 240);
+        color: rgba(233, 230, 230, 0.8);
+        text-size-adjust: calc();
+        line-height: 1.5;
+        line-height: 24px;
+    }
+
     .inicios {
         transform: scale(1);
         transform-origin: 0 0;
     }
 }
-
 
 .fotos-container {
     padding: 10px;
@@ -181,6 +195,19 @@ img:hover {
 
     .fotos-container img {
         width: 100%;
+    }
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-size: xx-large;
+        font-family: cursive;
+        color: #f1eded;
+        color: rgb(245, 240, 240);
+        color: rgba(233, 230, 230, 0.8);
+        text-size-adjust: calc();
+        line-height: 1.5;
+        line-height: 24px;
     }
 }
 
