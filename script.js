@@ -104,13 +104,7 @@ function eliminarGraph() {
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
         type: 'bar',
-        data: data,
-        options: {
-            responsive: true,
-            maintainAspectRadio: false,
-            response: true
-
-        }
+        data: data
     });
 }
 
