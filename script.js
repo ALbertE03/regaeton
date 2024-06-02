@@ -104,50 +104,7 @@ function eliminarGraph() {
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
         type: 'bar',
-        data: data, datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }], datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }], datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }], datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }], datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }], datasets: [{
-            label: 'Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: ['#d3d3d3'],
-            borderColor: 'white',
-            borderWidth: 1
-        }],
-        datasets: [{
-            label: ' Oyentes en Spotify',
-            data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-            backgroundColor: '#d3d3d3',
-            borderColor: 'white',
-            borderWidth: 1
-        }],
+        data: data,
         options: {
             responsive: true,
             maintainAspectRadio: false,
