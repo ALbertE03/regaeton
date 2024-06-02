@@ -8,8 +8,6 @@ const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
 const ctx2 = document.getElementById('actual').getContext('2d');
 let char;
 
-
-
 document.addEventListener('click', function (event) {
     let dropdownContent = document.getElementById('dropdown-content');
     let dropbtn = document.getElementById('dropbtn');
@@ -104,7 +102,8 @@ function eliminarGraph() {
 function generateGraph(ctx, data) {
     return char = new Chart(ctx, {
         type: 'bar',
-        data: data
+        data: data,
+
     });
 }
 
@@ -131,11 +130,11 @@ function graph2(ctx2, words, counts) {
                 y: {
                     ticks: { color: "white" },
                     beginAtZero: true
+                }, x: {
+                    ticks: {
+                        color: "white"
+                    },
                 }
-            }, x: {
-                ticks: {
-                    color: "white"
-                },
             }
         }
     });
