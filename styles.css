@@ -152,6 +152,7 @@ img:hover {
 
 
 .fotos-container {
+
     margin-top: 20px;
     display: flex;
     flex-wrap: nowrap;
@@ -167,6 +168,12 @@ img:hover {
 @media (max-width:768px) {
     .fotos-container {
         flex-wrap: wrap;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .fotos-container img {
