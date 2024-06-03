@@ -16,7 +16,7 @@ const options = {
     scales: {
         xAxes: [{
             ticks: {
-                autoSkip: true,
+
                 maxTicksLimit: 10
             },
             gridLines: {
@@ -25,7 +25,7 @@ const options = {
         }],
         yAxes: [{
             ticks: {
-                autoSkip: true,
+
                 maxTicksLimit: 10
             },
             gridLines: {
