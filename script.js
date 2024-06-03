@@ -164,25 +164,25 @@ fetch('/regaeton/data/data.json')
 
         const song1 = []
         for (const dict1 of Object.values(data)) {
-            for (const lyrics1 of dict1) {
-                if ("letra1" in lyrics1) {
-                    song1.push(lyrics1["letra1"])
+            for (const lyrics4 of dict1) {
+                if ("letra1" in lyrics4) {
+                    song1.push(lyrics4["letra1"])
                 }
             }
         }
         const song2 = []
         for (const dict2 of Object.values(data)) {
-            for (const lyrics2 of dict2) {
-                if ("letra2" in lyrics2) {
-                    song2.push(lyrics2["letra2"])
+            for (const lyrics6 of dict2) {
+                if ("letra2" in lyrics6) {
+                    song2.push(lyrics6["letra2"])
                 }
             }
         }
         const song3 = []
         for (const dict3 of Object.values(data)) {
-            for (const lyrics3 of dict3) {
-                if ("letra3" in lyrics3) {
-                    song3.push(lyrics3["letra3"])
+            for (const lyrics7 of dict3) {
+                if ("letra3" in lyrics7) {
+                    song3.push(lyrics7["letra3"])
                 }
             }
         }
@@ -229,9 +229,9 @@ fetch('/regaeton/data/data1.json')
     .then(data => {
         const song_actual = []
         for (const dict of Object.values(data)) {
-            for (const lyrics of dict) {
-                if ("letra" in lyrics) {
-                    song_actual.push(lyrics["letra"])
+            for (const lyrics8 of dict) {
+                if ("letra" in lyrics8) {
+                    song_actual.push(lyrics8["letra"])
                 }
             }
         }
