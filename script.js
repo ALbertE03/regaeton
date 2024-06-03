@@ -255,7 +255,7 @@ fetch('/regaeton/data/data1.json')
         for (const dict3 of Object.values(data)) {
             for (const lyrics3 of dict3) {
                 if ("letra3" in lyrics3) {
-                    song_actual3.push(lyrics2["letra3"])
+                    song_actual3.push(lyrics3["letra3"])
                 }
             }
         }
