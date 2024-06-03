@@ -11,11 +11,13 @@ const options = {
     responsive: true,
     maintainAspectRatio: true,
     legend: {
-        display: true
+        display: false
     },
     scales: {
         xAxes: [{
             ticks: {
+
+                maxTicksLimit: 10
             },
             gridLines: {
                 display: false
@@ -23,9 +25,11 @@ const options = {
         }],
         yAxes: [{
             ticks: {
+
+                maxTicksLimit: 10
             },
             gridLines: {
-                display: true
+                display: false
             }
         }]
     }
