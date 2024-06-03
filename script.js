@@ -7,6 +7,34 @@ let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
 const ctx2 = document.getElementById('actual').getContext('2d');
 let char;
+const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+        display: false
+    },
+    scales: {
+        xAxes: [{
+            ticks: {
+                autoSkip: true,
+                maxTicksLimit: 10
+            },
+            gridLines: {
+                display: false
+            }
+        }],
+        yAxes: [{
+            ticks: {
+                autoSkip: true,
+                maxTicksLimit: 10
+            },
+            gridLines: {
+                display: false
+            }
+        }]
+    }
+};
+
 
 document.addEventListener('click', function (event) {
     let dropdownContent = document.getElementById('dropdown-content');
@@ -23,21 +51,21 @@ function showModal(img) {
     modal.style.display = "block";
 
     if (img.id === "Daddy") {
-        generateGraph(ctx, dataDaddy)
+        generateGraph(ctx, dataDaddy, options)
     } else if (img.id === 'DonOmar') {
-        generateGraph(ctx, dataDonOmar)
+        generateGraph(ctx, dataDonOmar, options)
     } else if (img.id === 'Vico') {
-        generateGraph(ctx, dataVico)
+        generateGraph(ctx, dataVico, options)
     } else if (img.id === 'Tego') {
-        generateGraph(ctx, dataTego)
+        generateGraph(ctx, dataTego, options)
     } else if (img.id === "Bad") {
-        generateGraph(ctx, dataBad)
+        generateGraph(ctx, dataBad, options)
     } else if (img.id === "Karol") {
-        generateGraph(ctx, dataKarol)
+        generateGraph(ctx, dataKarol, options)
     } else if (img.id === "Feid") {
-        generateGraph(ctx, dataFeid)
+        generateGraph(ctx, dataFeid, options)
     } else if (img.id === "Rauw") {
-        generateGraph(ctx, dataRauw)
+        generateGraph(ctx, dataRauw, options)
     }
 }
 
@@ -99,11 +127,11 @@ function eliminarGraph() {
     }
 }
 
-function generateGraph(ctx, data) {
+function generateGraph(ctx, data, options) {
     return char = new Chart(ctx, {
         type: 'bar',
         data: data,
-
+        options: options
     });
 }
 
