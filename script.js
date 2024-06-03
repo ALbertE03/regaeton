@@ -9,15 +9,13 @@ const ctx2 = document.getElementById('actual').getContext('2d');
 let char;
 const options = {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     legend: {
-        display: false
+        display: true
     },
     scales: {
         xAxes: [{
             ticks: {
-
-                maxTicksLimit: 10
             },
             gridLines: {
                 display: false
@@ -25,11 +23,9 @@ const options = {
         }],
         yAxes: [{
             ticks: {
-
-                maxTicksLimit: 10
             },
             gridLines: {
-                display: false
+                display: true
             }
         }]
     }
