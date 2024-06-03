@@ -7,34 +7,6 @@ let ctx = graphCanvas.getContext('2d');
 const ctx1 = document.getElementById('wordFrequencyChart').getContext('2d');
 const ctx2 = document.getElementById('actual').getContext('2d');
 let char;
-const options = {
-    responsive: true,
-    maintainAspectRatio: true,
-    legend: {
-        display: false
-    },
-    scales: {
-        xAxes: [{
-            ticks: {
-
-                maxTicksLimit: 10
-            },
-            gridLines: {
-                display: false
-            }
-        }],
-        yAxes: [{
-            ticks: {
-
-                maxTicksLimit: 10
-            },
-            gridLines: {
-                display: false
-            }
-        }]
-    }
-};
-
 
 document.addEventListener('click', function (event) {
     let dropdownContent = document.getElementById('dropdown-content');
@@ -49,24 +21,6 @@ function showModal(img) {
     modalTitle.textContent = imageInfo.title;
     modalInfo.textContent = imageInfo.info;
     modal.style.display = "block";
-
-    if (img.id === "Daddy") {
-        generateGraph(ctx, dataDaddy, options)
-    } else if (img.id === 'DonOmar') {
-        generateGraph(ctx, dataDonOmar, options)
-    } else if (img.id === 'Vico') {
-        generateGraph(ctx, dataVico, options)
-    } else if (img.id === 'Tego') {
-        generateGraph(ctx, dataTego, options)
-    } else if (img.id === "Bad") {
-        generateGraph(ctx, dataBad, options)
-    } else if (img.id === "Karol") {
-        generateGraph(ctx, dataKarol, options)
-    } else if (img.id === "Feid") {
-        generateGraph(ctx, dataFeid, options)
-    } else if (img.id === "Rauw") {
-        generateGraph(ctx, dataRauw, options)
-    }
 }
 
 function closeModal() {
@@ -127,17 +81,10 @@ function eliminarGraph() {
     }
 }
 
-function generateGraph(ctx, data, options) {
-    return char = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: options
-    });
-}
-
 function graph2(ctx2, words, counts) {
     return char = new Chart(ctx2, {
         type: 'bar',
+
         data: {
             labels: words,
             datasets: [{
@@ -202,165 +149,6 @@ function graph1(ctx1, words, counts) {
     });
 }
 
-// datos
-let dataDaddy = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: ['#d3d3d3', '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataKarol = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: ' Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-
-};
-
-let dataBad = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataRauw = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataFeid = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataVico = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataTego = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1
-    }]
-};
-
-let dataDonOmar = {
-    labels: ['Daddy Yankee', 'Tego Calderón', "Vico C", 'Don Omar', 'Karol G', "Feid", 'Rauw', 'Bad Bunny'],
-    datasets: [{
-        label: 'Oyentes en Spotify',
-        data: [51900000, 9800000, 2700000, 37000000, 48800000, 43200000, 52400000, 68200000],
-        backgroundColor: [
-            '#d3d3d3',
-            '#a9a9a9',
-            '#f5f5dc',
-            '#ffc0cb',
-            '#add8e6',
-            '#c1e1c5',
-            '#e0b1cb',
-            '#ffdab9'
-        ],
-        borderColor: 'white',
-        borderWidth: 1,
-    }]
-};
-
 //Json1
 fetch('/regaeton/data/data.json')
     .then(response => response.json())
@@ -378,7 +166,7 @@ fetch('/regaeton/data/data.json')
         for (const dict1 of Object.values(data)) {
             for (const lyrics1 of dict1) {
                 if ("letra1" in lyrics1) {
-                    song.push(lyrics1["letra1"])
+                    song1.push(lyrics1["letra1"])
                 }
             }
         }
@@ -386,16 +174,25 @@ fetch('/regaeton/data/data.json')
         for (const dict2 of Object.values(data)) {
             for (const lyrics2 of dict2) {
                 if ("letra2" in lyrics2) {
-                    song.push(lyrics2["letra2"])
+                    song2.push(lyrics2["letra2"])
                 }
             }
         }
-        const letras0 = song.join(" ")
-        const letras1 = song1.join(" ")
-        const letras2 = song2.join(" ")
-        const letras = (letras0 + letras1) + letras2
+        const song3 = []
+        for (const dict3 of Object.values(data)) {
+            for (const lyrics3 of dict3) {
+                if ("letra3" in lyrics3) {
+                    song3.push(lyrics3["letra3"])
+                }
+            }
+        }
+        const letras0 = song.join(" ");
+        const letras1 = song1.join(" ");
+        const letras2 = song2.join(" ");
+        const letra3 = song3.join(" ");
+        const letras = (letras0 + letras1) + (letras2 + letra3);
 
-        util(letras)
+        util(letras);
 
         function util(text) {
             const stopwords = ["vamos", 'toma', 'dale', 'dame', 'alaba', 'dónde', 'habríais', 'estéis', 'fueron', 'tuvieses', 'yo', 'tendréis', 'vuestro', 'tuviésemos', 'algo', 'una', 'fuiste', 'tendré', 'tu', 'hayamos', 'estábamos', 'sentido', 'nada', 'sentidos', 'antes', 'ya', 'como', 'siente', 'mi', 'hubiera', 'habrías', 'habíamos', 'fuesen', 'fui', 'los', 'tuviéramos', 'tengas', 'estos', 'tendrías', 'tanto', 'estuvieras', 'tened', 'habiendo', 'fuerais', 'te', 'fueras', 'estuviéramos', 'o', 'al', 'habían', 'fuimos', 'habido', 'tuvieras', 'tenidas', 'habrían', 'su', 'estaban', 'teniendo', 'tus', 'del', 'tuviste', 'que', 'estáis', 'unos', 'estuvieses', 'habéis', 'estaré', 'serías', 'estaríamos', 'tenemos', 'estuvieran', 'estados', 'mía', 'fuisteis', 'porque', 'nosotros', 'esta', 'cual', 'tuvieran', 'algunas', 'estarán', 'vuestra', 'nos', 'seas', 'tengamos', 'tenida', 'erais', 'serían', 'sería', 'estuviste', 'tuve', 'mías', 'de', 'eras', 'estaríais', 'ese', 'han', 'habrán', 'habidos', 'estuvieron', 'eres', 'muchos', 'cuando', 'tenían', 'ellos', 'estando', 'tenía', 'tú', 'estuvieseis', 'tienen', 'con', 'el', 'nuestros', 'esos', 'tendrás', 'ellas', 'tenidos', 'habidas', 'esté', 'fueses', 'sobre', 'pero', 'hay', 'estaréis', 'suyos', 'seáis', 'tienes', 'hubo', 'durante', 'un', 'algunos', 'estuvimos', 'tuvieseis', 'tuvimos', 'seremos', 'ha', 'estarás', 'estará', 'otro', 'más', 'estuvo', 'qué', 'todos', 'habremos', 'estabas', 'somos', 'habida', 'estuvierais', 'era', 'sentida', 'sea', 'tengo', 'le', 'ti', 'eran', 'donde', 'él', 'tuvieron', 'tuviera', 'todo', 'serás', 'fue', 'hubieses', 'teníamos', 'e', 'la', 'has', 'estén', 'estaría', 'vuestros', 'seré', 'muy', 'habías', 'nuestra', 'para', 'tenías', 'hubiéramos', 'tendríais', 'estar', 'tuvo', 'por', 'he', 'teníais', 'estemos', 'fueseis', 'uno', 'fueran', 'sintiendo', 'estuviesen', 'fuéramos', 'hubiste', 'tuviese', 'sin', 'hubierais', 'tendríamos', 'tuyo', 'habréis', 'será', 'tenéis', 'sean', 'otra', 'les', 'nuestro', 'soy', 'contra', 'las', 'también', 'mío', 'estado', 'hayan', 'son', 'éramos', 'esa', 'están', 'ante', 'y', 'tengan', 'vuestras', 'poco', 'estadas', 'tuviesen', 'estás', 'esas', 'nosotras', 'hubieran', 'no', 'desde', 'sus', 'haya', 'hubiese', 'ni', 'os', 'estad', 'tuvisteis', 'este', 'sí', 'mí', 'estamos', 'estuvisteis', 'estuve', 'vosotras', 'mis', 'habrá', 'serán', 'hubieseis', 'fuera', 'se', 'hubieras', 'tendrían', 'estarían', 'hayas', 'a', 'fuésemos', 'sois', 'habré', 'sentid', 'hemos', 'tendremos', 'tendrán', 'nuestras', 'habrás', 'vosotros', 'estaremos', 'hubiesen', 'seamos', 'míos', 'seréis', 'lo', 'suyas', 'estés', 'tenga', 'eso', 'tengáis', 'está', 'habríamos', 'tuyas', 'esto', 'quienes', 'estarías', 'tuyos', 'otras', 'quien', 'entre', 'estuviese', 'estoy', 'estaba', 'estabais', 'es', 'tendrá', 'seríamos', 'hube', 'mucho', 'tenido', 'había', 'tiene', 'sentidas', 'tuvierais', 'hasta', 'estuviera', 'suya', 'estada', 'tendría', 'hubisteis', 'suyo', 'estuviésemos', 'habría', 'en', 'hayáis', 'hubimos', 'habíais', 'hubiésemos', 'tuya', 'otros', 'seríais', 'hubieron', 'fuese', 'estas', 'ella', 'me'];
@@ -418,7 +215,7 @@ fetch('/regaeton/data/data.json')
             const topWords = sortedWords.slice(0, 15);
             const words = topWords.map(item => item.word);
             const counts = topWords.map(item => item.count);
-            graph1(ctx1, words, counts)
+            graph1(ctx1, words, counts);
         }
 
     })
@@ -454,12 +251,20 @@ fetch('/regaeton/data/data1.json')
                     song_actual2.push(lyrics2["letra2"])
                 }
             }
+        } const song_actual3 = []
+        for (const dict3 of Object.values(data)) {
+            for (const lyrics3 of dict3) {
+                if ("letra3" in lyrics3) {
+                    song_actual3.push(lyrics2["letra3"])
+                }
+            }
         }
-        const letras_actual0 = song_actual.join(" ")
-        const letras_actual1 = song_actual1.join(" ")
-        const letras_actual2 = song_actual2.join(" ")
-        const letras_actual = (letras_actual0 + letras_actual1) + letras_actual2
-        util1(letras_actual)
+        const letras_actual0 = song_actual.join(" ");
+        const letras_actual1 = song_actual1.join(" ");
+        const letras_actual2 = song_actual2.join(" ");
+        const letras_actual3 = song_actual3.join(" ");
+        const letras_actual = (letras_actual0 + letras_actual1) + (letras_actual2 + letras_actual3);
+        util1(letras_actual);
 
         function util1(text) {
             const stopwords = ["vamos", 'toma', 'dale', 'dame', 'alaba', 'dónde', 'habríais', 'estéis', 'fueron', 'tuvieses', 'yo', 'tendréis', 'vuestro', 'tuviésemos', 'algo', 'una', 'fuiste', 'tendré', 'tu', 'hayamos', 'estábamos', 'sentido', 'nada', 'sentidos', 'antes', 'ya', 'como', 'siente', 'mi', 'hubiera', 'habrías', 'habíamos', 'fuesen', 'fui', 'los', 'tuviéramos', 'tengas', 'estos', 'tendrías', 'tanto', 'estuvieras', 'tened', 'habiendo', 'fuerais', 'te', 'fueras', 'estuviéramos', 'o', 'al', 'habían', 'fuimos', 'habido', 'tuvieras', 'tenidas', 'habrían', 'su', 'estaban', 'teniendo', 'tus', 'del', 'tuviste', 'que', 'estáis', 'unos', 'estuvieses', 'habéis', 'estaré', 'serías', 'estaríamos', 'tenemos', 'estuvieran', 'estados', 'mía', 'fuisteis', 'porque', 'nosotros', 'esta', 'cual', 'tuvieran', 'algunas', 'estarán', 'vuestra', 'nos', 'seas', 'tengamos', 'tenida', 'erais', 'serían', 'sería', 'estuviste', 'tuve', 'mías', 'de', 'eras', 'estaríais', 'ese', 'han', 'habrán', 'habidos', 'estuvieron', 'eres', 'muchos', 'cuando', 'tenían', 'ellos', 'estando', 'tenía', 'tú', 'estuvieseis', 'tienen', 'con', 'el', 'nuestros', 'esos', 'tendrás', 'ellas', 'tenidos', 'habidas', 'esté', 'fueses', 'sobre', 'pero', 'hay', 'estaréis', 'suyos', 'seáis', 'tienes', 'hubo', 'durante', 'un', 'algunos', 'estuvimos', 'tuvieseis', 'tuvimos', 'seremos', 'ha', 'estarás', 'estará', 'otro', 'más', 'estuvo', 'qué', 'todos', 'habremos', 'estabas', 'somos', 'habida', 'estuvierais', 'era', 'sentida', 'sea', 'tengo', 'le', 'ti', 'eran', 'donde', 'él', 'tuvieron', 'tuviera', 'todo', 'serás', 'fue', 'hubieses', 'teníamos', 'e', 'la', 'has', 'estén', 'estaría', 'vuestros', 'seré', 'muy', 'habías', 'nuestra', 'para', 'tenías', 'hubiéramos', 'tendríais', 'estar', 'tuvo', 'por', 'he', 'teníais', 'estemos', 'fueseis', 'uno', 'fueran', 'sintiendo', 'estuviesen', 'fuéramos', 'hubiste', 'tuviese', 'sin', 'hubierais', 'tendríamos', 'tuyo', 'habréis', 'será', 'tenéis', 'sean', 'otra', 'les', 'nuestro', 'soy', 'contra', 'las', 'también', 'mío', 'estado', 'hayan', 'son', 'éramos', 'esa', 'están', 'ante', 'y', 'tengan', 'vuestras', 'poco', 'estadas', 'tuviesen', 'estás', 'esas', 'nosotras', 'hubieran', 'no', 'desde', 'sus', 'haya', 'hubiese', 'ni', 'os', 'estad', 'tuvisteis', 'este', 'sí', 'mí', 'estamos', 'estuvisteis', 'estuve', 'vosotras', 'mis', 'habrá', 'serán', 'hubieseis', 'fuera', 'se', 'hubieras', 'tendrían', 'estarían', 'hayas', 'a', 'fuésemos', 'sois', 'habré', 'sentid', 'hemos', 'tendremos', 'tendrán', 'nuestras', 'habrás', 'vosotros', 'estaremos', 'hubiesen', 'seamos', 'míos', 'seréis', 'lo', 'suyas', 'estés', 'tenga', 'eso', 'tengáis', 'está', 'habríamos', 'tuyas', 'esto', 'quienes', 'estarías', 'tuyos', 'otras', 'quien', 'entre', 'estuviese', 'estoy', 'estaba', 'estabais', 'es', 'tendrá', 'seríamos', 'hube', 'mucho', 'tenido', 'había', 'tiene', 'sentidas', 'tuvierais', 'hasta', 'estuviera', 'suya', 'estada', 'tendría', 'hubisteis', 'suyo', 'estuviésemos', 'habría', 'en', 'hayáis', 'hubimos', 'habíais', 'hubiésemos', 'tuya', 'otros', 'seríais', 'hubieron', 'fuese', 'estas', 'ella', 'me'];
