@@ -74,13 +74,6 @@ function getImageInfo(imageId) {
     return imageInfo[imageId];
 }
 
-//gráficos
-function eliminarGraph() {
-    if (char) {
-        char.destroy()
-    }
-}
-
 function graph2(ctx2, words, counts) {
     return char = new Chart(ctx2, {
         type: 'bar',
