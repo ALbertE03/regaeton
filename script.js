@@ -139,10 +139,10 @@ function graph1(ctx1, words, counts) {
                 y: {
                     ticks: { color: "white" },
                     beginAtZero: true
-                }
-            }, x: {
-                ticks: {
-                    color: "white"
+                }, x: {
+                    ticks: {
+                        color: "white"
+                    },
                 },
             }
         }
