@@ -25,13 +25,13 @@ function showModal(img) {
 
 function closeModal() {
     modal.style.display = "none";
-    eliminarGraph();
+
 }
 
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        eliminarGraph();
+
     }
 }
 
