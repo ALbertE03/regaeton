@@ -93,6 +93,11 @@ img:hover {
 
 }
 
+canvas {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .inicios-content {
     text-align: center;
     align-items: center;
@@ -147,6 +152,24 @@ img:hover {
 }
 
 @media screen and (min-width:0) {
+    canvas {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .fotos-container {
+        gap: 15px;
+        padding: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     h1 {
         align-items: center;
         text-align: center;
@@ -167,6 +190,7 @@ img:hover {
 }
 
 .fotos-container {
+    gap: 15px;
     padding: 10px;
     padding-right: 10px;
     padding-left: 10px;
@@ -183,7 +207,13 @@ img:hover {
 }
 
 @media (max-width:768px) {
+    canvas {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .fotos-container {
+        gap: 15px;
         flex-wrap: wrap;
         margin-top: auto;
         margin-bottom: auto;
