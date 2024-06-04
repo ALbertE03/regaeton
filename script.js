@@ -279,7 +279,7 @@ fetch('/regaeton/data/data1.json')
             const topWords = sortedWords.slice(0, 15);
             const words1 = topWords.map(item => item.word);
             const counts1 = topWords.map(item => item.count);
-            graph2(ctx2, words1, counts1)
+            graph2(ctx2, words1, counts1);
         }
 
     })
