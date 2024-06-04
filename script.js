@@ -25,13 +25,13 @@ function showModal(img) {
 
 function closeModal() {
     modal.style.display = "none";
-
+    graph2(ctx2, words1, counts1)
 }
 
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
-
+        graph2(ctx2, words1, counts1)
     }
 }
 
