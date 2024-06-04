@@ -116,7 +116,6 @@ function graph2(ctx2, words, counts) {
 }
 
 function graph1(ctx1, words, counts) {
-    eliminarGraph()
     return char = new Chart(ctx1, {
         type: 'bar',
         data: {
